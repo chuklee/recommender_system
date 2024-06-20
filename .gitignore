@@ -4,3 +4,5 @@ venv/
 *.zip
 *.gz
 dataset/
+ml-1m/
+*.csv
