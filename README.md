@@ -10,7 +10,7 @@
 7. Future Improvements
 
 ## Introduction
-This project implements a sophisticated movie recommendation system using collaborative filtering and deep learning techniques. The system is designed to provide personalized movie recommendations by analyzing user interaction history, movie features, and user demographics.
+This project implements a movie recommendation system using collaborative filtering and deep learning techniques. The system is designed to provide personalized movie recommendations by analyzing user interaction history, movie features, and user demographics.
 The core of the system is a neural network model that learns to predict user ratings for movies based on historical data. It leverages techniques such as sequence modeling, attention mechanisms, and multi-task learning to capture complex patterns in user behavior and movie characteristics.
 
 Key features of the system include:
@@ -20,6 +20,15 @@ Key features of the system include:
 - Sequence-based modeling of user viewing history
 - Attention mechanism for weighing the importance of different movies in a user's history
 - Paired user approach for collaborative filtering
+
+Before arriving to this result, i tried several models and techniques, such as:
+- Matrix Factorization
+- Deep Learning with Embeddings
+- Collaborative Filtering
+
+For the matrix factorization and collaborative filtering i had good results, but i wanted to try a more complex model, so i decided to use a deep learning model with attention mechanism.
+
+For the embedding model, i had the problem that i need to create 3 different embeddings for the user, movie and genre, and i wanted to create a model that could use all the information in a single model. The solution was to split the model in 2, one for the user and another for the movie, and then combine the information in a single model but it was a costly solution in terms of time.
 
 ## Data Preparation
 ### Dataset Acquisition and Processing
