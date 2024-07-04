@@ -28,6 +28,8 @@ Before arriving to this result, i tried several models and techniques, such as:
 
 For the matrix factorization and collaborative filtering i had good results, but i wanted to try a more complex model, so i decided to use a deep learning model with attention mechanism.
 
+If you want to check the user-item interaction matrix, you can run the matrix.ipynb file.
+
 For the embedding model, i had the problem that i need to create 3 different embeddings for the user, movie and genre, and i wanted to create a model that could use all the information in a single model. The solution was to split the model in 2, one for the user and another for the movie, and then combine the information in a single model but it was a costly solution in terms of time.
 
 ## Data Preparation
